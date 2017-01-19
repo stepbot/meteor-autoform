@@ -453,7 +453,7 @@ Template.autoForm.events({
 
     var vc = AutoForm.getValidationContext(formId);
     if (vc) {
-      vc.resetValidation();
+      vc.reset();
       // If simpleSchema is undefined, we haven't yet rendered the form, and therefore
       // there is no need to reset validation for it. No error need be thrown.
     }
