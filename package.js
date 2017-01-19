@@ -9,17 +9,14 @@ Package.onUse(function(api) {
   // Dependencies
   api.versionsFrom(['METEOR@0.9.3', 'METEOR@0.9.4', 'METEOR@1.0']);
   // common
-  api.use('aldeed:simple-schema@1.1.0');
   api.use('check');
   // client
   api.use(['livedata', 'underscore', 'deps', 'templating', 'ui', 'blaze', 'ejson', 'reactive-var', 'reactive-dict', 'random', 'jquery'], 'client');
   api.use('momentjs:moment@2.10.6', 'client');
   api.use('mrt:moment-timezone@0.2.1', 'client', {weak: true});
   api.use('aldeed:moment-timezone@0.4.0', 'client', {weak: true});
-  api.use(['aldeed:collection2@2.0.0', 'reload'], 'client', {weak: true});
 
-  // Imply SS to make sure SimpleSchema object is available to app
-  api.imply('aldeed:simple-schema');
+
 
   // Exports
   api.export('AutoForm', 'client');
