@@ -1,6 +1,6 @@
 /* global AutoForm:true, FormPreserve */
 checkNpmVersions({ 'simpl-schema': '0.x.x' }, 'aldeed:meteor-collection2-core');
-const SimpleSchema = require('simpl-schema').default;
+import SimpleSchema from 'simpl-schema';
 
 AutoForm = AutoForm || {};
 
